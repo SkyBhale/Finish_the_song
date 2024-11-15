@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finish the Song</title>
+    <link rel="icon" href="minergy.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Finish the Song</h1>
+    <div class="grid-container">
+        <!-- Create 25 tiles -->
+        <div class="glass-card" id="1" value="100">100</div>
+        <div class="glass-card" id="2" value="100">100</div>
+        <div class="glass-card" id="3" value="100">100</div>
+        <div class="glass-card" id="4" value="100">100</div>
+        <div class="glass-card" id="5" value="100">100</div>
+        <div class="glass-card" id="6" value="100">100</div>
+        <div class="glass-card" id="7" value="200">200</div>
+        <div class="glass-card" id="8" value="200">200</div>
+        <div class="glass-card" id="9" value="200">200</div>
+        <div class="glass-card" id="10" value="200">200</div>
+        <div class="glass-card" id="11" value="200">200</div>
+        <div class="glass-card" id="12" value="200">200</div>
+        <div class="glass-card" id="13" value="300">300</div>
+        <div class="glass-card" id="14" value="300">300</div>
+        <div class="glass-card" id="15" value="300">300</div>
+        <div class="glass-card" id="16" value="300">300</div>
+        <div class="glass-card" id="17" value="300">300</div>
+        <div class="glass-card" id="18" value="300">300</div>
+        <div class="glass-card" id="19" value="400">400</div>
+        <div class="glass-card" id="20" value="400">400</div>
+        <div class="glass-card" id="21" value="400">400</div>
+        <div class="glass-card" id="22" value="400">400</div>
+        <div class="glass-card" id="23" value="400">400</div>
+        <div class="glass-card" id="24" value="400">400</div>
+        <div class="glass-card" id="25" value="500">500</div>
+        <div class="glass-card" id="26" value="500">500</div>
+        <div class="glass-card" id="27" value="500">500</div>
+        <div class="glass-card" id="28" value="500">500</div>
+        <div class="glass-card" id="29" value="500">500</div>
+        <div class="glass-card" id="30" value="500">500</div>
+    </div>
+
+    <div class="team-container">
+        <div class="score-input">
+            <button class="button" onclick="changeScore('team1-score', 1)">+</button>
+            <input type="number" id="team1-score" value="0" readonly>
+            <button class="button" onclick="changeScore('team1-score', -1)">-</button>
+            <label for="team1-score">Team 1 Score:</label>
+        </div>
+        <div class="score-input">
+            <button class="button" onclick="changeScore('team2-score', 1)">+</button>
+            <input type="number" id="team2-score" value="0" readonly>
+            <button class="button" onclick="changeScore('team2-score', -1)">-</button>
+            <label for="team2-score">Team 2 Score:</label>
+        </div>
+        <div class="score-input">
+            <button class="button" onclick="changeScore('team3-score', 1)">+</button>
+            <input type="number" id="team3-score" value="0" readonly>
+            <button class="button" onclick="changeScore('team3-score', -1)">-</button>
+            <label for="team3-score">Team 3 Score:</label>
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+
+    <audio id="audio-player" src="" preload="auto"></audio>
+
+
+<script src="main.js"></script>
+</body>
+</html>
